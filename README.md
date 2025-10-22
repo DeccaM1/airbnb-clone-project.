@@ -29,7 +29,7 @@ Propeties: id, user_id, title, description, location.
 Bookings: id, user_id, property_id, check_in, check _out, total_price
 Payment: id, booking_id, amount, status, payment_method
 Review: comment,user_id, id,rating, property_id
-Entity Relationships Overview
+#Entity Relationships Overview
 User ↔️ Properties: One-to-Many (a host can list many properties)
 User ↔️ Bookings: One-to-Many (a guest can make many bookings)
 Property ↔️ Bookings: One-to-Many (each property can be booked many times)
