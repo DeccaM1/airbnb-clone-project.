@@ -64,24 +64,24 @@ Provides transparency and a reliable booking record for both guests and hosts.
 Hosts have access to a dashboard to manage listings, view earnings, and track booking analytics.  
 Helps hosts make informed decisions about their property offerings.  
 ## API Security  
-1. Authentication
+1. __Authentication__  
 User authentication is handled using secure methods such as hashed passwords (bcrypt) and OAuth 2.0 for third-party logins (Google, Facebook).  Authentication ensures only verified users can access their accounts, protecting personal data and preventing unauthorized access.
-2. Authorization
+2. __Authorization__  
 Role-based access control (RBAC) is enforced to differentiate between guests, hosts, and admins.  
 Certain actions (e.g., creating listings or viewing host dashboards) are restricted based on user roles.  
 Prevents users from performing actions beyond their permissions (e.g., a guest accessing admin routes), maintaining data integrity and platform safety.
-3. Rate Limiting
+3. __Rate Limiting__  
 Rate limiting and IP throttling are implemented using tools like Express-rate-limit or API Gateway throttling.  
 Protects the API from abuse, brute-force attacks, and bot traffic by limiting the number of requests per user or IP over time.
-4. Secure Payments
+4. __Secure Payments__  
 Payments are processed using secure, PCI-compliant platforms like Stripe or PayPal. Payment data is never stored on our servers.  
 Ensures compliance with financial regulations and protects users' financial data from theft or misuse.
-5. Database Security
+5. __Database Security__  
 Parameterized queries and ORM-level protections (e.g., with Prisma).  
 Regular database backups and access control via roles.  
 Encrypted environment variables for sensitive credentials.  
 Protects stored user data and prevents unauthorized access or data leaks.
-6. HTTPS (TLS Encryption)
+6. __HTTPS (TLS Encryption)__  
 All communication between the client and server is encrypted via SSL/TLS, enforced via HTTPS.  
 Prevents man-in-the-middle (MITM) attacks and ensures that sensitive data like login credentials and payments cannot be intercepted.
 
