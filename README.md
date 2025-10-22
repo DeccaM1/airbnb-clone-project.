@@ -84,6 +84,13 @@ Protects stored user data and prevents unauthorized access or data leaks.
 6. __HTTPS (TLS Encryption)__  
 All communication between the client and server is encrypted via SSL/TLS, enforced via HTTPS.  
 Prevents man-in-the-middle (MITM) attacks and ensures that sensitive data like login credentials and payments cannot be intercepted.
-
+## CI/CD Pipeline  
+CI/CD (Continuous Integration and Continuous Deployment) refers to a set of practices that automate the process of building, testing, and deploying code whenever changes are made. This ensures that updates are delivered quickly, reliably, and with minimal manual intervention.  
+CI/CD is essential to maintain stability, speed up feature delivery, and ensure users have a seamless experience during updates.  
+__CI/CD Tools__  
++ GitHub Action
++ Docker
++ Terraform
++ AWS
 
 
