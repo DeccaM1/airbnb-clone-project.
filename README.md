@@ -36,4 +36,33 @@ __Entity Relationships Overview__
 3. Property ↔️ Bookings: One-to-Many (each property can be booked many times).  
 4. Booking ↔️ Payment: One-to-One (each booking has a single payment).  
 5. Property ↔️ Reviews: One-to-Many (each property can be reviewed multiple times).  
-6. User ↔️ Reviews: One-to-Many (a user can leave many reviews).  
+6. User ↔️ Reviews: One-to-Many (a user can leave many reviews).
+## Feature Breakdown.  
+This section outlines the key features implemented in the Airbnb-style project. Each feature is designed to replicate essential functionality found in modern rental platforms, contributing to a full end-to-end user experience for both hosts and guests.  
+__User Management__  
+Allows users to register, log in, and manage their profiles.  
+Includes authentication via email/password and social logins, as well as role-based access (e.g., guest vs. host).
+__Property Management__   
+Enables hosts to list properties with details like photos, location, pricing, and amenities.  
+Hosts can create, update, or remove listings through an intuitive dashboard.  
+__Booking System__   
+Guests can view property availability and make reservations for specific dates.  
+Includes dynamic pricing calculations and availability checks to prevent double-bookings.  
+__Payment Integration__  
+Secure payment processing is handled using Stripe or PayPal.  
+Ensures smooth transactions, supports multiple currencies, and handles booking confirmations after successful payment.  
+__Reviews & Ratings__  
+Guests can leave reviews and ratings after completing a stay.  
+These reviews are visible on property pages, helping future guests make informed decisions.  
+__Search & Filtering__  
+Users can search for properties based on location, dates, price, and amenities.  
+Powered by full-text search and filters for a tailored browsing experience.  
+__Booking History & Receipts__  
+Users can view their past and upcoming bookings, along with digital receipts.  
+Provides transparency and a reliable booking record for both guests and hosts.  
+__Host Dashboard__  
+Hosts have access to a dashboard to manage listings, view earnings, and track booking analytics.  
+Helps hosts make informed decisions about their property offerings.  
+
+
+
