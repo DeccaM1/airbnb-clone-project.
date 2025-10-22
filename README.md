@@ -32,8 +32,8 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 __Entity Relationships Overview__  
 1. User ↔️ Properties: One-to-Many (a host can list many properties).  
-1. User ↔️ Bookings: One-to-Many (a guest can make many bookings).  
-1. Property ↔️ Bookings: One-to-Many (each property can be booked many times).  
-1. Booking ↔️ Payment: One-to-One (each booking has a single payment).  
-1. Property ↔️ Reviews: One-to-Many (each property can be reviewed multiple times).  
-1. User ↔️ Reviews: One-to-Many (a user can leave many reviews).  
+2. User ↔️ Bookings: One-to-Many (a guest can make many bookings).  
+3. Property ↔️ Bookings: One-to-Many (each property can be booked many times).  
+4. Booking ↔️ Payment: One-to-One (each booking has a single payment).  
+5. Property ↔️ Reviews: One-to-Many (each property can be reviewed multiple times).  
+6. User ↔️ Reviews: One-to-Many (a user can leave many reviews).  
