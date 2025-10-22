@@ -23,4 +23,16 @@ HTTPS (TLS/SSL) : For encrypted data transfer
 WAF & IAM (AWS) : For secure cloud access control
 Braintree / Stripe / PayPal SDKs: Secure transactions and currency handling
 Amazon S3 : Cloud storage for images and documents
-
+## Database Design
+Users: id(UUID/Primary Key), name(string), email(string,unique), password_hash(string), role(enum:"guest, "host","admin").
+Propeties: id, user_id, title, description, location.
+Bookings: id, user_id, property_id, check_in, check _out, total_price
+Payment: id, booking_id, amount, status, payment_method
+Review: comment,user_id, id,rating, property_id
+Entity Relationships Overview
+User ↔️ Properties: One-to-Many (a host can list many properties)
+User ↔️ Bookings: One-to-Many (a guest can make many bookings)
+Property ↔️ Bookings: One-to-Many (each property can be booked many times)
+Booking ↔️ Payment: One-to-One (each booking has a single payment)
+Property ↔️ Reviews: One-to-Many (each property can be reviewed multiple times)
+User ↔️ Reviews: One-to-Many (a user can leave many reviews)
